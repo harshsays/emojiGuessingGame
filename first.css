@@ -1,0 +1,76 @@
+#block{
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    animation: hh 2s ease-in-out 0s infinite alternate ;
+}
+h1{
+    display: flex;
+    text-align: center;
+}
+#emoji-name{
+    font-size: 100%;
+    outline: none;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px black;
+    height: 10%;
+    width: 70%;
+    border-radius: 20px;
+}
+#emoji-pic{
+    height: 30%;
+    width:auto;
+    min-width: 20%;
+    border: 2px solid black 
+    ;
+   font-size: 400%;
+   box-shadow: 0px 0px 10px black;
+   text-align: center;
+}
+#developer-name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+@keyframes hh {
+    0%{
+        box-shadow: 0px 0px 20px 10px black;
+    }
+25%{
+    box-shadow: 0px 0px 20px  red;
+}
+50%{
+    box-shadow: 0px 0px 20px  10px blue;
+}
+75%{
+    box-shadow: 0px 0px 20px   chartreuse;
+}
+100%{
+    box-shadow: 0px 0px 20px 10px  yellow;
+}
+}
+hr{border: none;
+}
+@media screen and (max-width:800px) {
+    #block{
+        height: 500px;
+        width: 93vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-items: center;
+        animation: hh 2s ease-in-out 0s infinite alternate ;
+    }
+    #emoji-pic{
+        height: 20%;
+        width:auto;
+        border: 2px solid black ;
+       font-size: 200%;
+       text-align: center;
+        
+    }
+}
